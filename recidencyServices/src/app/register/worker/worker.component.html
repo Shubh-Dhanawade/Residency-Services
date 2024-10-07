@@ -1,1 +1,43 @@
-<p>worker works!</p>
+<div class="registration-container">
+  <h2>Worker Registration</h2>
+  <form action="/register-worker" method="post">
+      <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required>
+      </div>
+      <div class="form-group">
+          <label for="skill">Primary Skill:</label>
+          <select id="skill" name="skill" required>
+              <option value="">Select Skill</option>
+              <option value="plumber">Plumber</option>
+              <option value="electrician">Electrician</option>
+              <option value="carpenter">Carpenter</option>
+              <option value="painter">Painter</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm_password" required>
+      </div>
+      <button type="submit" class="btn">Register</button>
+  </form>
+  <div class="registration-link">
+      <p>Already registered? <a href="/worker-login">Login here</a></p>
+  </div>
+</div>
